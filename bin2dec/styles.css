@@ -10,4 +10,42 @@ body {
   height: 100vh;
 
   background: #f0f0f7;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body input {
+  background: none;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  color: #000;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input {
+  text-align: center;
+}
+
+.convert-to-decimal .result-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #000;
+
+  margin-top: 30px;
 }
