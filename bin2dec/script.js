@@ -51,12 +51,6 @@ function convertToDecimal() {
     return;
   }
 
-  if (html.decimalInput.value.length > 8) {
-    alert('Valor máximo atingido');
-
-    html.decimalInput.value = removeLastElementOfArray(html.decimalInput.value);
-  }
-
   html.result.innerText = convertBinaryToDecimal(html.decimalInput.value);
 }
 
