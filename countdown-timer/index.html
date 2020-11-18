@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="./src/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <div id="main">
+    <h1>COUNTDOWN TIMER</h1>
+    <div id="timer">
+      <div class="timerItem">
+        <span id="day">0</span>
+        <p>Day</p>
+      </div>
+      <div class="timerItem">
+        <span id="hour">0</span>
+        <p>Hour</p>
+      </div>
+      <div class="timerItem">
+        <span id="min">0</span>
+        <p>Min</p>
+      </div>
+      <div class="timerItem">
+        <span id="sec">0</span>
+        <p>Sec</p>
+      </div>
+    </div>
+    <div id="iconsContainer">
+      <button id="refresh">
+        <i class="fa fa-refresh fa-2x" aria-hidden="true" onclick="refreshTimer()"></i>
+      </button>
+
+      <button id="play">
+        <i class="fa fa-play fa-2x" aria-hidden="true" onclick="startTimer()"></i>
+      </button>
+
+      <button id="pause">
+        <i class="fa fa-pause fa-2x" aria-hidden="true" onclick="stopTimer()"></i>
+      </button>
+
+      <button id="config">
+        <i class="fa fa-cog fa-2x" aria-hidden="true" onclick="toggleConfigInputsShow()">
+
+        </i>
+      </button>
+    </div>
+    <div id="dateInputContainer">
+      <label for="day">Day</label>
+      <input type="number" name="day" id="dayInput" max="100" min="0" value="0" oninput="setSettingsValues()">
+
+      <label for="hour">Hour</label>
+      <input type="number" name="hour" id="hourInput" max="24" min="0" value="1" oninput="setSettingsValues()">
+
+      <label for="min">Min</label>
+      <input type="number" name="min" id="minInput" max="60" min="0" value="20" oninput="setSettingsValues()">
+
+      <label for="sec">Sec</label>
+      <input type="number" name="sec" id="secInput" max="60" min="0" value="23" oninput="setSettingsValues()">
+    </div>
+  </div>
+
+  <script src="./src/timer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  background-color: #c2e8f6;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#main {
+  background: #44849b;
+
+  height: 200px;
+  width: 500px;
+}
+
+#timer {
+  background: #18323d;
+
+  height: 130px;
+  width: 530px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-left: -15px;
+}
+
+#main h1 {
+  font-weight: 400;
+  font-size: 16px;
+
+  padding: 8px;
+
+  color: #1d3b47;
+}
+
+.timerItem {
+  display: flex;
+
+  color: #fff;
+
+  padding: 20px;
+
+  align-items: center;
+}
+
+.timerItem span {
+  font-weight: 400;
+  font-size: 50px;
+
+  padding: 5px;
+}
+
+.timerItem p {
+  font-weight: 400;
+}
+
+#iconsContainer {
+  width: 100%;
+  display: flex;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+
+  color: #1d3b47;
+
+  padding-top: 5px;
+
+  flex: 1;
+}
+
+.fa {
+  cursor: pointer;
+}
+
+#pause {
+  display: none;
+}
+
+#dateInputContainer {
+  margin-top: 20px;
+
+  display: none;
+
+  justify-content: center;
+}
+
+#dateInputContainer input {
+  max-width: 50px;
+
+  margin-left:3px;
+  margin-right: 5px;
+
+  background: transparent;
+  outline: none;
+  border: solid 1px;
+  border-radius: 2px;
+
+  font-size: 20px;
+  text-align: center;
+
+  color: #000;
+}
+
+#dateInputContainer label {
+  font-size: 20px;
+
+  margin-left: 10px;
+  /* font-weight: bold; */
+
+}
