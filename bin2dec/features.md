@@ -1,3 +1,5 @@
+# Bin2Dec
+
 ## User Stories
 
 - [x] User can enter up to 8 binary digits in one input field
