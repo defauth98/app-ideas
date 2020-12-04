@@ -8,4 +8,32 @@
 body {
   width: 100vw;
   height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+body form {
+  display: flex;
+
+  flex-direction: column;
+}
+
+body form h1 {
+  margin-bottom: 20px;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border: 2px solid red !important;
+}
+
+input:invalid:not(:placeholder-shown) + [data-validation-text] {
+  color: red !important;
+  display: block;
+}
+
+[data-validation-text] {
+  display: none;
 }
