@@ -41,3 +41,11 @@ Coleção de apps construídos com HTML, CSS e JavaScript para estudar desenvolv
 <h2 align="center">
   <img src=".github/flip-image.gif" alt="" align="center">
 </h2>
+
+## Input Validation
+
+> App web que usa HTML e CSS para validar input de nome, email e senha.
+
+<h2 align="center">
+  <img src=".github/inputvalidation.gif" alt="" align="center">
+</h2>

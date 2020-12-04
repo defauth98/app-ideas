@@ -16,7 +16,7 @@
       <h1>Informações do usuário</h1>
 
       <label for="name">Nome:</label>
-      <input type="text" id="name" pattern=".{5,}" />
+      <input type="text" class="input" id="name" pattern=".{5,}" />
       <span data-validation-text>Must be 5 chars or more</span>
 
       <label for="email">Email:</label>
@@ -24,11 +24,12 @@
         type="text"
         id="email"
         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"
+        class="input"
       />
       <span data-validation-text>Must be a valid email</span>
 
       <label for="pass">Senha:</label>
-      <input type="text" id="pass" pattern="([0-9]|\s){2,}" />
+      <input type="text" id="pass" class="input" pattern="([0-9]|\s){2,}" />
       <span data-validation-text
         >Must be 2 chars or more, only numbers and spaces allowed</span
       >

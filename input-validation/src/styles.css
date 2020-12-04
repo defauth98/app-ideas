@@ -15,6 +15,11 @@ body {
   justify-content: center;
 }
 
+body form .input {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
 body form {
   display: flex;
 
