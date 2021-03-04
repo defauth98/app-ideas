@@ -1,0 +1,21 @@
+.status {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-size: 18px;
+}
+
+.status .status-block {
+  display: flex;
+}
+
+.status .status-block p {
+  margin: 10px
+}
+
+.status .status-block p + p {
+  color: red
+}

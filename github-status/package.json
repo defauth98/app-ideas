@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "watchify ./src/main.js -o ./dist/bundle.js -d -v ",
-    "build": "browserify ./src/main.js > ./dist/bundle.js -t babelify --plugin tinyify"
+    "start": "watchify ./src/github.js -o ./dist/bundle.js -d -v ",
+    "build": "browserify ./src/github.js > ./dist/bundle.js -t babelify --plugin tinyify"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "request": "^2.88.2",
     "watchify": "^3.11.1"
   },
   "devDependencies": {
